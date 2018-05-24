@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Father.h"
+#import "Son.h"
+#import "Animal.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -17,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    Method originalMethod = class_getInstanceMethod([Father class], @selector(work));
+//    Method swizzleMethod = class_getInstanceMethod([Animal class], @selector(animal_wrok));
+//    method_exchangeImplementations(originalMethod, swizzleMethod);
+    [[Father new] work];
 }
 
 

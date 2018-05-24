@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C95FCD8A20B66B3D00912FA6 /* NSObject+ZZSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FCD8920B66B3D00912FA6 /* NSObject+ZZSwizzle.m */; };
 		C9CB316D20B5617E003193CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB316C20B5617E003193CF /* AppDelegate.m */; };
 		C9CB317020B5617E003193CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB316F20B5617E003193CF /* ViewController.m */; };
 		C9CB317320B5617E003193CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CB317120B5617E003193CF /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		C9CB317B20B5617E003193CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB317A20B5617E003193CF /* main.m */; };
 		C9CB318520B5617E003193CF /* SwizzleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB318420B5617E003193CF /* SwizzleDemoTests.m */; };
 		C9CB319020B5617E003193CF /* SwizzleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB318F20B5617E003193CF /* SwizzleDemoUITests.m */; };
+		C9CB319F20B5619D003193CF /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB319E20B5619D003193CF /* Father.m */; };
+		C9CB31A220B561AA003193CF /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB31A120B561AA003193CF /* Son.m */; };
+		C9CB31A520B56205003193CF /* Son+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB31A420B56205003193CF /* Son+Swizzle.m */; };
+		C9CB31A820B57572003193CF /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB31A720B57572003193CF /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C95FCD8820B66B3D00912FA6 /* NSObject+ZZSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZZSwizzle.h"; sourceTree = "<group>"; };
+		C95FCD8920B66B3D00912FA6 /* NSObject+ZZSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZZSwizzle.m"; sourceTree = "<group>"; };
 		C9CB316820B5617E003193CF /* SwizzleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwizzleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CB316B20B5617E003193CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9CB316C20B5617E003193CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,14 @@
 		C9CB318B20B5617E003193CF /* SwizzleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizzleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CB318F20B5617E003193CF /* SwizzleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleDemoUITests.m; sourceTree = "<group>"; };
 		C9CB319120B5617E003193CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CB319D20B5619D003193CF /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		C9CB319E20B5619D003193CF /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		C9CB31A020B561AA003193CF /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		C9CB31A120B561AA003193CF /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		C9CB31A320B56205003193CF /* Son+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son+Swizzle.h"; sourceTree = "<group>"; };
+		C9CB31A420B56205003193CF /* Son+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Son+Swizzle.m"; sourceTree = "<group>"; };
+		C9CB31A620B57572003193CF /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		C9CB31A720B57572003193CF /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +120,16 @@
 				C9CB316C20B5617E003193CF /* AppDelegate.m */,
 				C9CB316E20B5617E003193CF /* ViewController.h */,
 				C9CB316F20B5617E003193CF /* ViewController.m */,
+				C9CB319D20B5619D003193CF /* Father.h */,
+				C9CB319E20B5619D003193CF /* Father.m */,
+				C9CB31A020B561AA003193CF /* Son.h */,
+				C9CB31A120B561AA003193CF /* Son.m */,
+				C9CB31A620B57572003193CF /* Animal.h */,
+				C9CB31A720B57572003193CF /* Animal.m */,
+				C9CB31A320B56205003193CF /* Son+Swizzle.h */,
+				C9CB31A420B56205003193CF /* Son+Swizzle.m */,
+				C95FCD8820B66B3D00912FA6 /* NSObject+ZZSwizzle.h */,
+				C95FCD8920B66B3D00912FA6 /* NSObject+ZZSwizzle.m */,
 				C9CB317120B5617E003193CF /* Main.storyboard */,
 				C9CB317420B5617E003193CF /* Assets.xcassets */,
 				C9CB317620B5617E003193CF /* LaunchScreen.storyboard */,
@@ -266,7 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CB317020B5617E003193CF /* ViewController.m in Sources */,
+				C9CB31A220B561AA003193CF /* Son.m in Sources */,
+				C9CB319F20B5619D003193CF /* Father.m in Sources */,
+				C9CB31A520B56205003193CF /* Son+Swizzle.m in Sources */,
+				C9CB31A820B57572003193CF /* Animal.m in Sources */,
 				C9CB317B20B5617E003193CF /* main.m in Sources */,
+				C95FCD8A20B66B3D00912FA6 /* NSObject+ZZSwizzle.m in Sources */,
 				C9CB316D20B5617E003193CF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
